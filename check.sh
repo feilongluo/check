@@ -3712,41 +3712,27 @@ function Goodbye() {
 clear
 
 function ScriptTitle() {
-    formatted_time=$(date "+%Y-%m-%d %H:%M:%S")
+    echo ""
+    formatted_time=$(TZ="Asia/Shanghai" date "+%Y-%m-%d %H:%M:%S")
     echo "测试时间: $formatted_time"
     echo ""
 }
 ScriptTitle
 
 function Start() {
-    if [[ "$language" == "e" ]]; then
-        echo -e "${Font_Blue}Please Select Test Region or Press ENTER to Test All Regions${Font_Suffix}"
-        echo -e "${Font_SkyBlue}Input Number  [1：Multination + Taiwan ]${Font_Suffix}"
-        echo -e "${Font_SkyBlue}Input Number  [2：Multination + Hong Kong ]${Font_Suffix}"
-        echo -e "${Font_SkyBlue}Input Number  [3：Multination + Japan ]${Font_Suffix}"
-        echo -e "${Font_SkyBlue}Input Number  [4：Multination + North America ]${Font_Suffix}"
-        echo -e "${Font_SkyBlue}Input Number  [5：Multination + South America ]${Font_Suffix}"
-        echo -e "${Font_SkyBlue}Input Number  [6：Multination + Europe ]${Font_Suffix}"
-        echo -e "${Font_SkyBlue}Input Number  [7：Multination + Oceania ]${Font_Suffix}"
-        echo -e "${Font_SkyBlue}Input Number  [8：Multination + Korean ]${Font_Suffix}"
-        echo -e "${Font_SkyBlue}Input Number  [0：Multination Only ]${Font_Suffix}"
-        echo -e "${Font_SkyBlue}Input Number [99：Sport Platforms ]${Font_Suffix}"
-        read -p "Please Input the Correct Number or Press ENTER:" num
-    else
-        echo -e "${Font_Blue}请选择检测项目，直接按回车将只进行跨国平台检测${Font_Suffix}"
-        echo -e "${Font_SkyBlue}1：跨国平台+台湾平台 检测${Font_Suffix}"
-        echo -e "${Font_SkyBlue}2：跨国平台+香港平台 检测${Font_Suffix}"
-        echo -e "${Font_SkyBlue}3：跨国平台+日本平台 检测${Font_Suffix}"
-        echo -e "${Font_SkyBlue}4：跨国平台+北美平台 检测${Font_Suffix}"
-        echo -e "${Font_SkyBlue}5：跨国平台+南美平台 检测${Font_Suffix}"
-        echo -e "${Font_SkyBlue}6：跨国平台+欧洲平台 检测${Font_Suffix}"
-        echo -e "${Font_SkyBlue}7：跨国平台+大洋洲平台 检测${Font_Suffix}"
-        echo -e "${Font_SkyBlue}8：跨国平台+韩国平台 检测${Font_Suffix}"
-        echo -e "${Font_SkyBlue}9：跨国平台+东南亚平台 检测${Font_Suffix}"
-        echo -e "${Font_SkyBlue}0：只进行跨国平台 检测${Font_Suffix}"
-        echo -e "${Font_SkyBlue}99：体育直播平台 检测${Font_Suffix}"
-        read -p "请输入正确数字或直接按回车:" num
-    fi
+    echo -e "${Font_Blue}请选择检测项目，直接按回车将只进行跨国平台检测${Font_Suffix}"
+    echo -e "${Font_SkyBlue}1：跨国平台+台湾平台 检测${Font_Suffix}"
+    echo -e "${Font_SkyBlue}2：跨国平台+香港平台 检测${Font_Suffix}"
+    echo -e "${Font_SkyBlue}3：跨国平台+日本平台 检测${Font_Suffix}"
+    echo -e "${Font_SkyBlue}4：跨国平台+北美平台 检测${Font_Suffix}"
+    echo -e "${Font_SkyBlue}5：跨国平台+南美平台 检测${Font_Suffix}"
+    echo -e "${Font_SkyBlue}6：跨国平台+欧洲平台 检测${Font_Suffix}"
+    echo -e "${Font_SkyBlue}7：跨国平台+大洋洲平台 检测${Font_Suffix}"
+    echo -e "${Font_SkyBlue}8：跨国平台+韩国平台 检测${Font_Suffix}"
+    echo -e "${Font_SkyBlue}9：跨国平台+东南亚平台 检测${Font_Suffix}"
+    echo -e "${Font_SkyBlue}0：只进行跨国平台 检测${Font_Suffix}"
+    echo -e "${Font_SkyBlue}99：体育直播平台 检测${Font_Suffix}"
+    read -p "请输入正确数字或直接按回车:" num
 }
 Start
 
