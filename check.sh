@@ -3734,7 +3734,7 @@ function Start() {
     echo -e "${Font_SkyBlue}99：体育直播平台 检测${Font_Suffix}"
     read -p "请输入正确数字或直接按回车:" num
 }
-Start
+# Start
 
 function RunScript() {
     if [[ -n "${num}" ]]; then
